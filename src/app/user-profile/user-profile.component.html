@@ -1,0 +1,15 @@
+<p>
+  <img [src] ="photoSrc" [alt]="name"/>
+</p>
+
+<h1>Nom : {{name}}</h1>  
+<h2>Prénom : {{firstName}}</h2>
+
+<h5>Ma citation : {{quote}}
+<input type="text" name="quote" [(ngModel)]="quote">
+</h5>
+
+<div>
+  <button type="button" class="btn btn-danger" (click)="afficheAge=!afficheAge">Afficher/Masquer âge</button>
+  <h4 *ngIf="afficheAge">Age : {{age}}</h4>
+</div>
