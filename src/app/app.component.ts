@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,5 +10,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Magali';
   monEmail = "@gmail.com";
+
+  isThisIngredientVital : boolean = true;
+
+  displayGuestList : boolean = true;
+
+  songList : string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon", "boum boum"];
   
 }
